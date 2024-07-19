@@ -22,15 +22,15 @@ router.delete("/:id", verifyToken, deleteUser);
 router.get("/find/:id", getUser);
 
 //SUBSCRIBE A USER
-router.put("/sub/:id", subscribe);
+router.put("/sub/:id", verifyToken, subscribe);
 
 //UNSUBSCRIBE A USER
-router.put("/unsub/:id", unsubscribe);
+router.put("/unsub/:id", verifyToken, unsubscribe);
 
 //LIKE A VIDEO
-router.put("/like/:videoId", like);
+router.put("/like/:videoId", verifyToken, like);
 
 //UNLIKE A VIDEO
-router.put("/dislike/:videoId", dislike);
+router.put("/dislike/:videoId", verifyToken, dislike);
 
 export default router;
