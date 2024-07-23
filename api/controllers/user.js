@@ -85,7 +85,7 @@ export const like = async (req, res, next) => {
       $addToSet: { likes: id },
       $pull: { dislikes: id },
     });
-    res.status(200).json("The video has been liked!");
+    res.status(200).json("The video has been liked.");
   } catch (err) {
     next(err);
   }
@@ -100,7 +100,7 @@ export const dislike = async (req, res, next) => {
       $addToSet: { dislikes: id },
       $pull: { likes: id },
     });
-    res.status(200).json("The video has been disliked!");
+    res.status(200).json("The video has been disliked.");
   } catch (err) {
     next(err);
   }
