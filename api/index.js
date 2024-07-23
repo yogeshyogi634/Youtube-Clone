@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import cors from "cors";
 import dotenv from "dotenv";
 import userRoutes from "./routes/users.js";
 import commentRoutes from "./routes/comments.js";
@@ -21,6 +22,7 @@ const connect = () => {
     });
 };
 
+app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
 app.use("/api/auth", authRoutes);

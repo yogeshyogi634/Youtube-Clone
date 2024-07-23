@@ -12,6 +12,6 @@ export const LightTheme = {
   text: "black",
   textSoft: "#606060",
   // soft: "#f5f5f5",
-  // soft: "#dcdcdc",
-  soft: "#e8e8e8",
+  soft: "#dcdcdc",
+  // soft: "#e8e8e8",
 };
