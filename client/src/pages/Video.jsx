@@ -167,7 +167,6 @@ const Video = () => {
           <VideoFrame src={currentVideo?.videoUrl} controls />
         </VideoWrapper>
         <Title>{currentVideo.title}</Title>
-
         <Details>
           <Info>
             {currentVideo.views} views · {format(currentVideo.createdAt)}
